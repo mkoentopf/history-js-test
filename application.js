@@ -29,10 +29,9 @@
 // Seite1 -> Seite2 -(statechange:Seite2)-> Seite2+push -> Seite3
 
 window.addEventListener('popstate', function(event) {
-    // if (event.state) {
-    //     alert('!');
-    // }
+  if (event.state) {
     console.log('popstate', event.state);
+  }
 }, false);
 
 function pushIt(){
